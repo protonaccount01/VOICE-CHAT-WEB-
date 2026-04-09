@@ -16,10 +16,6 @@ const io = new Server(server, {
 
 let waitingUser = null;
 
-app.get('/keepalive', (req, res) => {
-    res.status(200).send('Alive');
-});
-
 io.on('connection', (socket) => {
     socket.partner = null;
 
@@ -76,3 +72,4 @@ const PORT = process.env.PORT || 3000;
 server.listen(PORT, () => {
     console.log(`Listening on port ${PORT}`);
 });
+                
