@@ -1,4 +1,4 @@
-const BACKEND_URL = "INSERT_YOUR_RENDER_URL_HERE"; 
+const BACKEND_URL = "https://voice-chat-web-b9ep.onrender.com"; 
 
 const socket = io(BACKEND_URL);
 
